@@ -2699,16 +2699,15 @@
 
                 const videoHtml = projectData.videoUrl ? `
                     <div class="project-video-container" style="padding-top: 0; height: auto;">
-                        <video 
-                            class="video-js vjs-default-skin vjs-big-play-centered" 
-                            controls 
-                            preload="auto" 
+                        <iframe 
+                            src="${projectData.videoUrl}"
                             width="100%" 
-                            poster=""
-                            data-setup='{"fluid": true}'>
-                            <source src="${projectData.videoUrl}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                            height="480"
+                            frameborder="0" 
+                            allow="autoplay; fullscreen" 
+                            allowfullscreen
+                            style="width: 100%; height: 480px; border: 1px solid var(--gold);">
+                        </iframe>
                     </div>
                 ` : '';
                 
@@ -3564,27 +3563,27 @@ What distinguishes this platform is its ability to dynamically generate entirely
             {
                 title: 'AI Chatbot Creation',
                 description: 'Revolutionizing website interactions with intelligent conversational agents that provide 24/7 customer support and engagement.',
-                videoUrl: '0207.mp4' // Add your video URL here
+                videoUrl: 'https://drive.google.com/file/d/1Kndcnt5Fp5AyumcDYdmewsKbfB8XZ9Fm/preview' // Add your video URL here
             },
             {
                 title: 'Email Automation System',
                 description: 'Advanced AI-powered email management that intelligently responds to inquiries, categorizes content, and maintains professional communication.',
-                videoUrl: 'emails.mp4' // Add your video URL here
+                videoUrl: 'https://drive.google.com/file/d/17G70c4iZVVZkHTs2Va168tYjKAIBJM2D/preview' // Add your video URL here
             },
             {
                 title: 'Dynamic Course Generator',
                 description: 'An innovative system that transforms any subject matter into comprehensive, structured learning materials tailored to individual needs.',
-                videoUrl: 'courses.mp4' // Add your video URL here
+                videoUrl: 'https://drive.google.com/file/d/1OUSSVD2bYJSsJQQ3rBI0R3q4NV1A0RT4/preview' // Add your video URL here
             },
             {
                 title: 'Personalized Learning Platform',
                 description: 'Adaptive education system that creates custom learning paths, generates assessments, and produces personalized video content.',
-                videoUrl: 'learning.mp4' // Add your video URL here
+                videoUrl: 'https://drive.google.com/file/d/1iHxoCvWozoF1LdBZiXwI1CkiOsiX7sAN/preview' // Add your video URL here
             },
             {
                 title: 'University Projects',
                 description: 'Collection of advanced academic research and development projects showcasing innovative approaches to emerging technology challenges.',
-                videoUrl: 'path/to/university-projects.mp4' // Replace with your actual video path or leave empty if no video
+                videoUrl: 'https://drive.google.com/file/d/YOUR_CHATBOT_VIDEO_ID/preview' // Replace with your actual video path or leave empty if no video
             },
             {
                 title: 'About Me',
@@ -3594,7 +3593,7 @@ What distinguishes this platform is its ability to dynamically generate entirely
             {
                 title: 'Podcast Preparation System',
                 description: 'AI-powered system that transforms facility floor plans and emergency procedures into audio briefings for instructors traveling to locations.',
-                videoUrl: 'podcast.mp4' // Update with your actual video file name
+                videoUrl: 'https://drive.google.com/file/d/1f0GTM2TL-yv96sMA5Ro7ABmNC4jyPbMH/preview' // Update with your actual video file name
             },   
         ];
         // Add this right after your projects array
